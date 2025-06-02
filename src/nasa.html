@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Ass Nasa</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(to bottom, #2f2f3a, #1e1e29);
+        color: #eaefef;
+        padding: 0;
+        min-height: 100vh;
+      }
+
+      h1 {
+        text-align: center;
+        background: #5c6bc0;
+        padding: 30px 20px;
+        font-size: 2.5rem;
+        color: white;
+        text-shadow: 2px 2px 4px #000;
+      }
+
+      #contain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+        padding: 40px 20px;
+      }
+
+      .facts,
+      .img {
+        width: 90%;
+        max-width: 500px;
+        background: #3e4059;
+        border-radius: 20px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        padding: 25px;
+        transition: transform 0.3s ease;
+      }
+
+      .facts:hover,
+      .img:hover {
+        transform: scale(1.02);
+      }
+
+      .title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .expl {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        text-align: justify;
+        padding: 10px;
+      }
+
+      .img img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        object-fit: cover;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        transition: 0.3s ease-in-out;
+      }
+
+      .img img:hover {
+        transform: scale(1.01);
+      }
+
+      @media (min-width: 768px) {
+        #contain {
+          flex-wrap: nowrap;
+        }
+
+        .facts,
+        .img {
+          width: 45%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Random NASA Pictures And Facts</h1>
+    <div id="contain">
+      <div class="facts">
+        <div class="title"></div>
+        <div class="expl"></div>
+      </div>
+      <div class="img"><img src="" alt="" /></div>
+    </div>
+    <script src="nasa.js"></script>
+  </body>
+</html>
